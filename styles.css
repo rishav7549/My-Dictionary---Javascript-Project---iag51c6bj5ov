@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #4D59FB;
+    background: bisque;
 }
 
 ::selection {
@@ -22,7 +22,7 @@ body {
 }
 
 .wrapper {
-    width: 420px;
+    width: 520px;
     border-radius: 7px;
     background: #fff;
     padding: 25px 28px 45px;
@@ -181,3 +181,81 @@ ul .content::-webkit-scrollbar {
     margin-right: 5px;
     text-decoration: underline;
 }
+
+/* .search-btn{
+    background-color: blanchedalmond;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    float: right;
+}
+
+.search-btn:hover{
+    background-color: black;
+    color: white;
+} */
+
+.history-btn{
+    background-color: blanchedalmond;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    float: right;
+}
+
+.history-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+/* .delete-btn{
+    background-color: blanchedalmond;
+    color: black;
+    padding: 3px 5px;
+    border-radius: 5px;
+    text-decoration: none;;
+}
+
+.delete-btn:hover{
+    background-color: black;
+    color: white;
+} */
+
+/* .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+    height: 100px;
+    width: 100px;
+    background-color: aliceblue;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    width: 200px;
+    border-radius: 10px;
+} */
+
+/* .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+    height: 100px;
+    width: 100px;
+    background-color: aliceblue; 
+}
+
+.card{
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    width: 200px;
+    border-radius: 10px;
+} */
+

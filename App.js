@@ -6,6 +6,7 @@ const wrapper = document.querySelector(".wrapper"),
     removeIcon = wrapper.querySelector(".search span");
 let audio;
 function data(result, word) {
+    savedataToLocal(result);
     if (result.title) {
         infoText.innerHTML = `Can't find the meaning of <span>"${word}"</span>. Please, try to search for another word.`;
     } else {
@@ -64,4 +65,21 @@ removeIcon.addEventListener("click", () => {
     infoText.style.color = "#9A9A9A";
     infoText.innerHTML = "Type any existing word and press enter to get meaning, example, synonyms, etc.";
 });
+
+function savedataToLocal(data){
+
+    if(localStorage.getItem("data")){
+        let storedItems = JSON.parse(localStorage.getItem("data"));
+        storedItems.push(data[0]);
+        localStorage.setItem("data", JSON.stringify(storedItems));
+    } else{
+        if(data && data.length > 1){
+            let arr = [];
+            arr.push(data[0]);
+            localStorage.setItem("data", JSON.stringify(arr));
+        } else{
+            localStorage.setItem("data", JSON.stringify(data));
+        }
+    }
+}
 
